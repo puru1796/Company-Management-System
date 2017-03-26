@@ -1,0 +1,79 @@
+Please input the file pathname: 3_c2.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> hire|Tim|20
+Done.
+
+> setupTeam|Customer Relationship Team|John
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Team already exists!
+
+> addTeamMember|Customer Relationship Team|John
+Employee has already joined the team!
+
+> addTeamMember|Customer Relationship Team|Grace
+Done.
+
+> listTeamMembers
+Customer Relationship Team:
+Grace
+John (Head of Team)
+
+
+> listRoles|Bob
+No role
+
+> listRoles|John
+Customer Relationship Team (Head of Team)
+
+> listRoles|Grace
+Customer Relationship Team
+
+> listRoles|Tim
+No role
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Customer Relationship Team    John      1-Jan-2016   
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Grace (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)
+Tim (Entitled Annual Leaves: 20 days)
+
+> setupTeam
+Insufficient command arguments!
+
+> setupTeam|Customer Relationship Team
+Insufficient command arguments!
+
+> setupTeam|Customer Relationship Team|Jack
+Employee not found!
+
+> addTeamMember
+Insufficient command arguments!
+
+> addTeamMember|Customer Relationship Team
+Insufficient command arguments!
+
+> addTeamMember|Customer Relationship Team|Jack
+Employee not found!
+
+> addTeamMember|Production Team|Tim
+Team not found!
+
+> listRoles|Jack
+Employee not found!

@@ -1,0 +1,86 @@
+Please input the file pathname: 3_b1.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> listRoles|Bob
+No role
+
+> listRoles|John
+No role
+
+> setupTeam|Production Team|Bob
+Done.
+
+> setupTeam|Sales Team|John
+Done.
+
+> addTeamMember|Production Team|John
+Done.
+
+> addTeamMember|Sales Team|Bob
+Done.
+
+> listRoles|Bob
+Production Team (Head of Team)
+Sales Team
+
+> listRoles|John
+Production Team
+Sales Team (Head of Team)
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+
+Sales Team:
+Bob
+John (Head of Team)
+
+
+> undo
+
+> undo
+
+> undo
+
+> listRoles|Bob
+Production Team (Head of Team)
+
+> listRoles|John
+No role
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+
+
+> redo
+
+> redo
+
+> redo
+
+> listRoles|Bob
+Production Team (Head of Team)
+Sales Team
+
+> listRoles|John
+Production Team
+Sales Team (Head of Team)
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+
+Sales Team:
+Bob
+John (Head of Team)
+

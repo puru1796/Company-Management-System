@@ -1,0 +1,63 @@
+Please input the file pathname: 1_c.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> hire|John|20
+Employee already exists!
+
+> hire|Jack
+Insufficient command arguments!
+
+> hire|Jack|301
+Annual leaves out of range (0-300)!
+
+> setupTeam|Customer Relationship Team|Bob
+Done.
+
+> setupTeam|Strategic Planning Team|John
+Done.
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Customer Relationship Team    Bob       1-Jan-2016   
+Strategic Planning Team       John      1-Jan-2016   
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Grace (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)
+
+> setupTeam|Promotion Team
+Insufficient command arguments!
+
+> setupTeam|Promotion Team|Andy
+Employee not found!
+
+> setupTeam|Customer Relationship Team|Grace
+Team already exists!
+
+> startNewDay|01-Feb-2016
+Done.
+
+> setupTeam|Clerical Support Team|Grace
+Done.
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Clerical Support Team         Grace     1-Feb-2016   
+Customer Relationship Team    Bob       1-Jan-2016   
+Strategic Planning Team       John      1-Jan-2016   
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Grace (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)

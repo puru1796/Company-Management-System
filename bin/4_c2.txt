@@ -1,0 +1,27 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|John|30
+hire|May|20
+hire|Ann|20
+
+setupTeam|Production Team|Bob
+setupTeam|Sales Team|Bob
+addTeamMember|Production Team|John 
+addTeamMember|Sales Team|May 
+addTeamMember|Sales Team|Ann
+
+takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John
+takeLeave|Bob|3-Jan-2016|4-Jan-2016|Sales Team|May
+takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John|Sales Team|Mandy
+takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John|Sales Team|John
+listTeamMembers
+
+takeLeave|Bob|3-Jan-2016|9-Jan-2016|Production Team|John|Sales Team|May
+takeLeave|Ann|3-Jan-2016|4-Jan-2016
+takeLeave|May|3-Jan-2016|4-Jan-2016
+takeLeave|John|8-Jan-2016|9-Jan-2016
+takeLeave|May|3-Feb-2016|4-Feb-2016
+takeLeave|John|1-Jan-2016|2-Jan-2016
+listTeamMembers
+listLeaves

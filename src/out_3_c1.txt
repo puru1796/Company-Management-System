@@ -1,0 +1,45 @@
+Please input the file pathname: 3_c1.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> hire|Tim|20
+Done.
+
+> setupTeam|Customer Relationship Team|John
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Team already exists!
+
+> addTeamMember|Customer Relationship Team|John
+Employee has already joined the team!
+
+> addTeamMember|Customer Relationship Team|Grace
+Done.
+
+> listTeamMembers
+Customer Relationship Team:
+Grace
+John (Head of Team)
+
+
+> listRoles|Bob
+No role
+
+> listRoles|John
+Customer Relationship Team (Head of Team)
+
+> listRoles|Grace
+Customer Relationship Team
+
+> listRoles|Tim
+No role

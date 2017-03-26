@@ -1,0 +1,18 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|John|30
+hire|Grace|30
+hire|Tim|20
+
+setupTeam|Customer Relationship Team|John
+setupTeam|Customer Relationship Team|Bob 
+
+addTeamMember|Customer Relationship Team|John 
+addTeamMember|Customer Relationship Team|Grace
+
+listTeamMembers
+listRoles|Bob
+listRoles|John
+listRoles|Grace
+listRoles|Tim

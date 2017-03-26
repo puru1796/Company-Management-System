@@ -1,0 +1,63 @@
+Please input the file pathname: 2_b.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Bob|02-Jan-2016|08-Jan-2016
+Done.
+
+> takeLeave|Carol|02-Jan-2016|08-Jan-2016
+Done.
+
+> takeLeave|Carol|02-Mar-2016|09-Mar-2016
+Done.
+
+> listLeaves
+Bob:
+2-Jan-2016 to 8-Jan-2016
+Carol:
+2-Jan-2016 to 8-Jan-2016
+2-Mar-2016 to 9-Mar-2016
+
+> undo
+
+> undo
+
+> listLeaves
+Bob:
+2-Jan-2016 to 8-Jan-2016
+Carol:
+No leave record
+
+> redo
+
+> listLeaves
+Bob:
+2-Jan-2016 to 8-Jan-2016
+Carol:
+2-Jan-2016 to 8-Jan-2016
+
+> takeLeave|Carol|02-Mar-2016|07-Mar-2016
+Done.
+
+> listLeaves
+Bob:
+2-Jan-2016 to 8-Jan-2016
+Carol:
+2-Jan-2016 to 8-Jan-2016
+2-Mar-2016 to 7-Mar-2016
+
+> redo
+Nothing to redo.
+
+> listLeaves
+Bob:
+2-Jan-2016 to 8-Jan-2016
+Carol:
+2-Jan-2016 to 8-Jan-2016
+2-Mar-2016 to 7-Mar-2016

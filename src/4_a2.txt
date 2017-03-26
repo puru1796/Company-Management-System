@@ -1,0 +1,18 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|Tim|20
+hire|Ada|20
+hire|Carol|20
+
+setupTeam|Sales Team|Bob 
+setupTeam|Production Team|Bob
+
+addTeamMember|Sales Team|Tim
+addTeamMember|Sales Team|Ada
+addTeamMember|Production Team|Carol
+ 
+takeLeave|Bob|14-Jan-2016|18-Jan-2016|Production Team|Carol|Sales Team|Tim
+takeLeave|Bob|02-Jan-2016|04-Jan-2016|Production Team|Carol|Sales Team|Ada
+listLeaves
+listTeamMembers

@@ -1,0 +1,16 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|John|30
+hire|Grace|30
+
+setupTeam|Customer Relationship Team|Bob 
+setupTeam|Strategic Planning Team|John
+
+listTeams
+listEmployees
+
+startNewDay|01-Feb-2016
+setupTeam|Clerical Support Team|Grace
+
+listTeams

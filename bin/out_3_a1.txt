@@ -1,0 +1,42 @@
+Please input the file pathname: 3_a1.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> setupTeam|Production Team|Bob
+Done.
+
+> setupTeam|Sales Team|John
+Done.
+
+> addTeamMember|Production Team|John
+Done.
+
+> listRoles|Bob
+Production Team (Head of Team)
+
+> listRoles|John
+Production Team
+Sales Team (Head of Team)
+
+> addTeamMember|Sales Team|Bob
+Done.
+
+> listRoles|Bob
+Production Team (Head of Team)
+Sales Team
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+
+Sales Team:
+Bob
+John (Head of Team)
+

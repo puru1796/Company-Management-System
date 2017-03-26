@@ -1,0 +1,108 @@
+Please input the file pathname: 1_b.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Grace (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)
+
+> undo
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)
+
+> undo
+
+> undo
+
+> undo
+Nothing to undo.
+
+> redo
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+
+> hire|Tim|30
+Done.
+
+> redo
+Nothing to redo.
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Tim (Entitled Annual Leaves: 30 days)
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Done.
+
+> setupTeam|Strategic Planning Team|John
+Done.
+
+> startNewDay|01-Feb-2016
+Done.
+
+> setupTeam|Clerical Support Team|Grace
+Done.
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Clerical Support Team         Grace     1-Feb-2016   
+Customer Relationship Team    Bob       1-Jan-2016   
+Strategic Planning Team       John      1-Jan-2016   
+
+> undo
+
+> undo
+
+> undo
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Customer Relationship Team    Bob       1-Jan-2016   
+
+> redo
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Customer Relationship Team    Bob       1-Jan-2016   
+Strategic Planning Team       John      1-Jan-2016   
+
+> setupTeam|Clerical Support Team|Grace
+Done.
+
+> startNewDay|01-Mar-2016
+Done.
+
+> setupTeam|Promotion Team|Tim
+Done.
+
+> listTeams
+Team Name                     Leader    Setup Date   
+Clerical Support Team         Grace     1-Jan-2016   
+Customer Relationship Team    Bob       1-Jan-2016   
+Promotion Team                Tim       1-Mar-2016   
+Strategic Planning Team       John      1-Jan-2016   
+
+> listEmployees
+Bob (Entitled Annual Leaves: 30 days)
+Grace (Entitled Annual Leaves: 30 days)
+John (Entitled Annual Leaves: 30 days)
+Tim (Entitled Annual Leaves: 30 days)

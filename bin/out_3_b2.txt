@@ -1,0 +1,134 @@
+Please input the file pathname: 3_b2.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|Grace|30
+Done.
+
+> hire|Tim|20
+Done.
+
+> hire|Ada|20
+Done.
+
+> hire|Carol|20
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Done.
+
+> setupTeam|Strategic Planning Team|John
+Done.
+
+> addTeamMember|Customer Relationship Team|Tim
+Done.
+
+> addTeamMember|Customer Relationship Team|Carol
+Done.
+
+> addTeamMember|Strategic Planning Team|Ada
+Done.
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+Carol
+Tim
+
+Strategic Planning Team:
+Ada
+John (Head of Team)
+
+
+> listRoles|Bob
+Customer Relationship Team (Head of Team)
+
+> listRoles|John
+Strategic Planning Team (Head of Team)
+
+> listRoles|Grace
+No role
+
+> listRoles|Tim
+Customer Relationship Team
+
+> listRoles|Ada
+Strategic Planning Team
+
+> listRoles|Carol
+Customer Relationship Team
+
+> undo
+
+> undo
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+Tim
+
+Strategic Planning Team:
+John (Head of Team)
+
+
+> listRoles|Bob
+Customer Relationship Team (Head of Team)
+
+> listRoles|John
+Strategic Planning Team (Head of Team)
+
+> listRoles|Grace
+No role
+
+> listRoles|Tim
+Customer Relationship Team
+
+> listRoles|Ada
+No role
+
+> listRoles|Carol
+No role
+
+> redo
+
+> addTeamMember|Strategic Planning Team|Bob
+Done.
+
+> redo
+Nothing to redo.
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+Carol
+Tim
+
+Strategic Planning Team:
+Bob
+John (Head of Team)
+
+
+> listRoles|Bob
+Customer Relationship Team (Head of Team)
+Strategic Planning Team
+
+> listRoles|John
+Strategic Planning Team (Head of Team)
+
+> listRoles|Grace
+No role
+
+> listRoles|Tim
+Customer Relationship Team
+
+> listRoles|Ada
+No role
+
+> listRoles|Carol
+Customer Relationship Team

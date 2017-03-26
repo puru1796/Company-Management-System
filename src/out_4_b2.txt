@@ -1,0 +1,122 @@
+Please input the file pathname: 4_b2.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|Tim|20
+Done.
+
+> hire|Ada|20
+Done.
+
+> hire|Carol|20
+Done.
+
+> setupTeam|Sales Team|Bob
+Done.
+
+> setupTeam|Production Team|Bob
+Done.
+
+> addTeamMember|Sales Team|Tim
+Done.
+
+> addTeamMember|Sales Team|Ada
+Done.
+
+> addTeamMember|Production Team|Carol
+Done.
+
+> takeLeave|Bob|14-Jan-2016|18-Jan-2016|Production Team|Carol|Sales Team|Tim
+Done.
+
+> takeLeave|Bob|02-Jan-2016|04-Jan-2016|Production Team|Carol|Sales Team|Ada
+Done.
+
+> undo
+
+> undo
+
+> listLeaves
+Ada:
+No leave record
+Bob:
+No leave record
+Carol:
+No leave record
+Tim:
+No leave record
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+Carol
+
+Sales Team:
+Ada
+Bob (Head of Team)
+Tim
+
+
+> redo
+
+> listLeaves
+Ada:
+No leave record
+Bob:
+14-Jan-2016 to 18-Jan-2016
+Carol:
+No leave record
+Tim:
+No leave record
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+Carol
+Acting heads:
+14-Jan-2016 to 18-Jan-2016: Carol
+
+Sales Team:
+Ada
+Bob (Head of Team)
+Tim
+Acting heads:
+14-Jan-2016 to 18-Jan-2016: Tim
+
+
+> takeLeave|Bob|28-Jan-2016|04-Feb-2016|Production Team|Carol|Sales Team|Ada
+Done.
+
+> redo
+Nothing to redo.
+
+> listLeaves
+Ada:
+No leave record
+Bob:
+14-Jan-2016 to 18-Jan-2016
+28-Jan-2016 to 4-Feb-2016
+Carol:
+No leave record
+Tim:
+No leave record
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+Carol
+Acting heads:
+14-Jan-2016 to 18-Jan-2016: Carol
+28-Jan-2016 to 4-Feb-2016: Carol
+
+Sales Team:
+Ada
+Bob (Head of Team)
+Tim
+Acting heads:
+14-Jan-2016 to 18-Jan-2016: Tim
+28-Jan-2016 to 4-Feb-2016: Ada
+

@@ -1,0 +1,56 @@
+Please input the file pathname: 4_b1.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Done.
+
+> addTeamMember|Customer Relationship Team|John
+Done.
+
+> setupTeam|Production Team|John
+Done.
+
+> takeLeave|Bob|12-Jan-2016|18-Jan-2016|Customer Relationship Team|John
+Done.
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+John
+Acting heads:
+12-Jan-2016 to 18-Jan-2016: John
+
+Production Team:
+John (Head of Team)
+
+
+> undo
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+John
+
+Production Team:
+John (Head of Team)
+
+
+> redo
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+John
+Acting heads:
+12-Jan-2016 to 18-Jan-2016: John
+
+Production Team:
+John (Head of Team)
+

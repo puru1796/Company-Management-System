@@ -1,0 +1,19 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|John|30
+
+setupTeam|Customer Relationship Team|Bob
+addTeamMember|Customer Relationship Team|John 
+
+setupTeam|Production Team|John
+
+takeLeave|Bob|12-Jan-2016|18-Jan-2016|Customer Relationship Team|John
+
+listTeamMembers
+
+undo
+listTeamMembers
+
+redo
+listTeamMembers

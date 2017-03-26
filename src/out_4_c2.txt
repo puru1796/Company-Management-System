@@ -1,0 +1,96 @@
+Please input the file pathname: 4_c2.txt
+
+> startNewDay|01-Jan-2016
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|May|20
+Done.
+
+> hire|Ann|20
+Done.
+
+> setupTeam|Production Team|Bob
+Done.
+
+> setupTeam|Sales Team|Bob
+Done.
+
+> addTeamMember|Production Team|John
+Done.
+
+> addTeamMember|Sales Team|May
+Done.
+
+> addTeamMember|Sales Team|Ann
+Done.
+
+> takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John
+Please name a member to be the acting head of Sales Team
+
+> takeLeave|Bob|3-Jan-2016|4-Jan-2016|Sales Team|May
+Please name a member to be the acting head of Production Team
+
+> takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John|Sales Team|Mandy
+Employee (Mandy) not found for Sales Team!
+
+> takeLeave|Bob|3-Jan-2016|4-Jan-2016|Production Team|John|Sales Team|John
+Employee (John) not found for Sales Team!
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+
+Sales Team:
+Ann
+Bob (Head of Team)
+May
+
+
+> takeLeave|Bob|3-Jan-2016|9-Jan-2016|Production Team|John|Sales Team|May
+Done.
+
+> takeLeave|Ann|3-Jan-2016|4-Jan-2016
+Done.
+
+> takeLeave|May|3-Jan-2016|4-Jan-2016
+Cannot take leave.  May is the acting head of Sales Team during 3-Jan-2016 to 9-Jan-2016!
+
+> takeLeave|John|8-Jan-2016|9-Jan-2016
+Cannot take leave.  John is the acting head of Production Team during 3-Jan-2016 to 9-Jan-2016!
+
+> takeLeave|May|3-Feb-2016|4-Feb-2016
+Done.
+
+> takeLeave|John|1-Jan-2016|2-Jan-2016
+Done.
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+Acting heads:
+3-Jan-2016 to 9-Jan-2016: John
+
+Sales Team:
+Ann
+Bob (Head of Team)
+May
+Acting heads:
+3-Jan-2016 to 9-Jan-2016: May
+
+
+> listLeaves
+Ann:
+3-Jan-2016 to 4-Jan-2016
+Bob:
+3-Jan-2016 to 9-Jan-2016
+John:
+1-Jan-2016 to 2-Jan-2016
+May:
+3-Feb-2016 to 4-Feb-2016

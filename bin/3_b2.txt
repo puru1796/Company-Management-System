@@ -1,0 +1,44 @@
+startNewDay|01-Jan-2016
+
+hire|Bob|30
+hire|John|30
+hire|Grace|30
+hire|Tim|20
+hire|Ada|20
+hire|Carol|20
+
+setupTeam|Customer Relationship Team|Bob 
+setupTeam|Strategic Planning Team|John
+addTeamMember|Customer Relationship Team|Tim
+addTeamMember|Customer Relationship Team|Carol
+addTeamMember|Strategic Planning Team|Ada
+
+listTeamMembers
+listRoles|Bob
+listRoles|John
+listRoles|Grace
+listRoles|Tim
+listRoles|Ada
+listRoles|Carol
+
+undo
+undo
+listTeamMembers
+listRoles|Bob
+listRoles|John
+listRoles|Grace
+listRoles|Tim
+listRoles|Ada
+listRoles|Carol
+
+redo
+addTeamMember|Strategic Planning Team|Bob
+redo
+listTeamMembers
+
+listRoles|Bob
+listRoles|John
+listRoles|Grace
+listRoles|Tim
+listRoles|Ada
+listRoles|Carol
